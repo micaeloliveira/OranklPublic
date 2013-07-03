@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  padding: 0;
+  /*background: #9FD6DF;*/
+  /*width: 1200px;
+  height: 1200px;*/
+  /*background: url('candyblurr.png') no-repeat;*/
+  background: url('img/bg.jpg') no-repeat center center fixed;
+  background-position: top;
+  min-width: 100%;
+  min-height: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-size: cover;
+
+}
+
+h1 {
+  font: 36pt/20pt Signika, Helvetica, sans-serif;
+  background: rgba(0,0,0,0.45) no-repeat center;
+  width: 520px;
+  height: 100%;
+  padding: 20px 5px;
+  text-align: center;
+  color: #ffffff;
+  font-weight: 400;
+  margin-top: 50px;
+  margin-right:  auto;
+  margin-left:  auto;
+}
+
+h2 {
+  font: 22pt/10pt Signika, Helvetica, sans-serif;
+  background: rgba(0,0,0,0.45) no-repeat center;
+  text-align: center;
+  padding: 15px 5px;
+  font-weight: 200;
+  width: 180px;
+  height: 100%;
+  color: #ffffff;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+
+.line {
+  width: 800px;
+  height: 1px;
+  margin-top: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  background: #ffffff;
+  border-bottom: 1px solid #ffffff;
+
+}
+
+.social ul{
+  margin-right: 50px;
+  list-style: none;
+  list-style-type: none;
+}
+
+.twitter {
+  float: top;
+  float: right;
+  height: 60px;
+  width: 60px;
+  background: url('img/roundtw.png') no-repeat;
+  opacity: 0.95;
+}
+
+.facebook {
+  float: top;
+  float: right;
+  height: 60px;
+  width: 60px;
+  background: url('img/roundfb.png') no-repeat;
+  opacity: 0.95;
+}
+
+.logo {
+  width: 320px;
+  height: 320px;
+  margin-right: auto;
+  margin-left: auto;
+  z-index: 2;
+  background: url('img/logo200.png') no-repeat center center;
+}
+
+#levitation {
+  cursor: pointer;
+  -webkit-animation-name: Meditation;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-delay: 0;
+  -webkit-animation-play-state: running;
+  -moz-animation-name: Meditation;
+  -moz-animation-duration: 3s;
+  -moz-animation-timing-function: ease-in-out;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-delay: 0;
+  -moz-animation-play-state: running;
+}
+
+
+
+@-webkit-keyframes Meditation {
+  0% {
+    -webkit-transform: translate(0, -20);
+  }
+  50% {
+    -webkit-transform: translate(0px, 20px);
+  }
+  100% {
+    -webkit-transform: translate(0, -20);
+  }
+}
+
+@-moz-keyframes Meditation {
+  0% {
+    -moz-transform: translate(0, -8);
+  }
+  50% {
+    -moz-transform: translate(0, 8px);
+  }
+  100% {
+    -moz-transform: translate(0, -8);
+  }
+}
