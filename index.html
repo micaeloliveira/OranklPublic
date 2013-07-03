@@ -11,20 +11,15 @@
 		$('#btnwrap').on('click',function() {
         var mail = $("#email").val();
         alert(mail);
-		 });
 		 $.ajax({  
             type: "POST",  
             url: "hhtp://orankl.com/subscribe.php",  
-            data: "email=",  
+            data: "email=" + mail,  
             success: function(){  
                 alert("Success!");  
             }  
         });
-
-		// $('#mail').submit( function() {
-  //       var mail = $("#mail_content").val();
-  //       alert(mail);
-		//  });
+		});
 
 	});
 	</script>
