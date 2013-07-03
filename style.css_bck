@@ -76,11 +76,6 @@ input {
   cursor:pointer;
 }
 
-#sendbtn:hover{
-  background: #2f56d3;
-  
-}
-
 .line {
   width: 800px;
   height: 0px;
@@ -101,20 +96,30 @@ input {
 }
 
 
+/*.bird {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  border-radius: 20px;  
+  background: url('img/bird.png');
+  z-index: 10;
+  margin-right: 1px;
+
+}*/
 
 .twitter {
-  opacity: 0.2;
-  position: absolute;
+  opacity: 0.3;
+  /*position: absolute;*/
   background-color: #222;
+  position: absolute;
   height: 45px;
   width:  45px;
   border-radius: 25px;  
   top: 10px;
   z-index: 10;
-  right: 30px;
 }
-
 .twitter:before {
+  /*position: relative;*/
   content: url('img/bird.png'); 
 }
 
@@ -122,36 +127,26 @@ input {
   background-color: #2878d2;
   opacity: 0.7;
 }
+/*.twitter {
+  float: top;
+  float: right;
+  height: 60px;
+  width: 60px;
+  background: url('img/roundtw.png') no-repeat;
+  opacity: 0.95;
+}
+*/
+
+
 
 .facebook {
-  opacity: 0.2;
-  position: absolute;
-  background-color: #222;
-  height: 45px;
-  width:  45px;
-  border-radius: 25px;  
-  top: 10px;
-  z-index: 10;
-  right: 90px;
-}
-
-.facebook:before {
-  content: url('img/fb.png'); 
-}
-
-.facebook:hover {
-  background-color: #2878d2;
-  opacity: 0.7;
-}
-
-/*.facebook {
   float: top;
   float: right;
   height: 60px;
   width: 60px;
   background: url('img/roundfb.png') no-repeat;
   opacity: 0.95;
-}*/
+}
 
 .logo {
   width: 320px;
