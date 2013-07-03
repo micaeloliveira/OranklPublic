@@ -5,6 +5,29 @@
 	<title>Orankl, From Anyone to Everyone</title>
 	<link rel="stylesheet" href="style.css">
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script>
+	$(document).ready(function(){
+
+		$('#btnwrap').on('click',function() {
+        var mail = $("#email").val();
+        alert(mail);
+		 });
+		 $.ajax({  
+            type: "POST",  
+            url: "hhtp://orankl.com/subscribe.php",  
+            data: "email=",  
+            success: function(){  
+                alert("Success!");  
+            }  
+        });
+
+		// $('#mail').submit( function() {
+  //       var mail = $("#mail_content").val();
+  //       alert(mail);
+		//  });
+
+	});
+	</script>
 </head>
 <body>
 	<center>
