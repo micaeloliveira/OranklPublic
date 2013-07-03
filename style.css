@@ -45,8 +45,33 @@ h2 {
   margin-right: auto;
 }
 
+form{
+  position: relative;
+}
 
+input {
+  border:0; 
+  padding:10px; 
+  font-size:1.3em; 
+  font-family:Signika, Helvetica, sans-serif; 
+  color:#aaa; 
+  border:solid 0px #ccc; 
+  margin:0 0 20px; 
+  width:220px;
+}
 
+#sendbtn{
+  background: #2878d2;
+  border:solid 0px #ccc;
+  padding:10px 30px; 
+  margin:0 0 20px; 
+  font-family:Signika, Helvetica, sans-serif; 
+  font-size:1.2em;
+  text-transform:uppercase;
+  font-weight:bold;
+  color:#ffffff;
+  cursor:pointer;
+}
 
 .line {
   width: 800px;
@@ -56,7 +81,6 @@ h2 {
   margin-left: auto;
   background: #ffffff;
   border-bottom: 1px solid #ffffff;
-
 }
 
 .social ul{
