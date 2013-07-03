@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: url('img/bgN.jpg') no-repeat center center fixed;
+  background: url('img/bg.jpg') no-repeat center center fixed;
   background-position: top;
   min-width: 100%;
   min-height: 100%;
@@ -9,8 +9,6 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-size: cover;
-
 }
 
 h1 {
