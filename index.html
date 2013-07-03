@@ -8,18 +8,11 @@
 	<script>
 	$(document).ready(function(){
 
-		$('#btnwrap').on('click',function() {
-        var mail = $("#email").val();
-        alert(mail);
-		 $.ajax({  
-            type: "POST",  
-            url: "hhtp://orankl.com/subscribe.php",  
-            data: "email=" + mail,  
-            success: function(){  
-                alert("Success!");  
-            }  
-        });
-		});
+		$('#btnwrap').on('click',function(e) {
+                        e.preventDefault();
+                        var email = $("#email").val();
+                        $.post('/subscribe.php', {email: email});      
+                });
 
 	});
 	</script>
@@ -50,7 +43,7 @@
 	
 
 	<form id="inviteform" name="inviteform" method="post" action="#">
-		<input type="email" name="email" id="email" placeholder="E-mail address" autocomplete="off" autocorrect="off" autocapitalize="off">
+		<input type="email" name="email" id="email" placeholder="email address" autocomplete="off" autocorrect="off" autocapitalize="off">
 		
 		<div id="btnwrap"><button name="sendbtn" id="sendbtn" type="submit" value="Send">Send</button></div>
 	</form>
